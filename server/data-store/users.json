@@ -2,7 +2,7 @@
   {
     "id": 1,
     "username": "alext",
-    "passwordHash": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8",
+    "passwordHash": "$2b$10$n1GDTEY/tnODDdzrkOYzIOPF5ZCLnn/CbzgF2wBKGSGAF0zwUNQ9i",
     "firstName": "Alex",
     "lastName": "Thimineur",
     "cart": [
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "username": "callie",
-    "passwordHash": "77af778b51abd4a3c51c5ddd97204a9c3ae614ebccb75a606c3b6865aed6744e",
+    "passwordHash": "$2b$10$pClSSW1ruXcsTgXABgfjFu1hVE0dFr80QRbnQBFNL0SQvU9K0iMmS",
     "firstName": "Callie",
     "lastName": "Marie",
     "cart": [

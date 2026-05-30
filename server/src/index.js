@@ -3,7 +3,6 @@ import * as dotenv from 'dotenv'
 import cors from 'cors'
 import * as productsData from './products.js'
 import { formatAjvValidationErrors, getLoginRequestValidator } from './schema.js'
-import { createHash } from 'crypto'
 import { getUserByCredentials, getUserById } from './users.js'
 import { createAuthToken, validateAuthToken } from './auth.js'
 import { InvalidAuthTokenError } from './errors.js'
@@ -75,8 +74,7 @@ const initializeServer = async () => {
         return res.status(400).json({ error: 'malformed/invalid request body', message: formatAjvValidationErrors(validator.errors) })
       }
       const body = req.body
-      const passwordHash = createHash('sha256').update(body.password).digest('hex')
-      const user = await getUserByCredentials(body.username, passwordHash)
+      const user = await getUserByCredentials(body.username, body.password)
       if (!user) {
         return res.status(401).json({ error: 'Unauthorized' })
       }
