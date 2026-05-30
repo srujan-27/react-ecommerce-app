@@ -1,7 +1,6 @@
 # React E-Commerce Application
 
-A full-stack e-commerce web application built with React and Express.js, featuring product browsing, user authentication, and shopping cart functionality. Developed as part of CSC-575 Web Development at Quinnipiac University.
-
+A full-stack e-commerce web application built with React and Express.js, featuring product browsing, user authentication, and shopping cart functionality.
 ## Features
 
 - **Product Catalog** — Browse products with images, ratings, prices, and descriptions
